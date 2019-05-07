@@ -7,5 +7,5 @@ app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 
 @app.on_message(Filters.chat('cfamovies1'))
 def forawrd(client, message):
-    client.forward_messages('https://t.me/joinchat/AAAAAFAqabnU15MWqOSbig', 'cfamovies1', [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+    client.forward_messages('https://t.me/joinchat/AAAAAFAqabnU15MWqOSbig', 'https://t.me/joinchat/AAAAAENZH2KQhHhHrUvz6g', [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
 app.run()
