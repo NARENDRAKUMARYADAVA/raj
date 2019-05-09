@@ -15,9 +15,8 @@ def forawrd(client, message):
       client.forward_messages(-1001356076506, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
     
 @app.on_message(Filters.command('hiiii') & Filters.private)
-  
 def ran(client , message ):
-  line.replace('2')
+      client.line.replace('2')
     
 
 
