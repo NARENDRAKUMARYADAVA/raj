@@ -10,15 +10,18 @@ string = 'j m'
 
 @app.on_message(Filters.chat(-1001309160459) & Filters.text & ~ Filters.regex('👇'))
 def forawrd(client, message):
-   if line == '1' :
+   if string == 'j m' :
       client.forward_messages(-1001344956857, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
       client.forward_messages(-1001356076506, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
     
-@app.on_message(Filters.command('hiiii') & Filters.private)
+@app.on_message(Filters.command('cheat1') & Filters.private)
 def ran(client , message ):
       string.replace('g','t')
     
-
+@app.on_message(Filters.command('nocheat') & Filters.private)
+def ran(client , message ):
+      string.replace('j','m')
+    
 
 app.run()
 
