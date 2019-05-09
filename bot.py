@@ -5,7 +5,7 @@ from pyrogram import Client, Filters
 
 app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 
-line = '1'
+string = '1'
 
 
 @app.on_message(Filters.chat(-1001309160459) & Filters.text & ~ Filters.regex('👇'))
@@ -16,7 +16,7 @@ def forawrd(client, message):
     
 @app.on_message(Filters.command('hiiii') & Filters.private)
 def ran(client , message ):
-      client.line.replace('2')
+      string.replace('2')
     
 
 
