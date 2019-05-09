@@ -10,7 +10,7 @@ with open('sure.txt','w') as f:
            pass 
 with open('sure.txt','w') as f:
    f_contests = f.read()
-        print(f_contents)
+        
 
 
 
