@@ -5,6 +5,15 @@ from pyrogram import Client, Filters
 
 app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 
+
+with open('sure.txt','w') as f:
+    f_contents = f.read()
+
+
+
+
+
+
 string = 'j m'
 
 
@@ -17,7 +26,7 @@ def forawrd(client, message):
 @app.on_message(Filters.command('cheat1') & Filters.private)
 def ran(client , message ):
       string.replace('g','t')
-      message.reply(string)
+      message.reply(f.read())
 
 @app.on_message(Filters.command('nocheat') & Filters.private)
 def ran(client , message ):
