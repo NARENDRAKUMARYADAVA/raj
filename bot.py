@@ -7,8 +7,9 @@ app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 
 
 with open('sure.txt','w') as f:
-    f_contents = f.read()
-
+           pass 
+  f_contents = f.read()
+         
 
 
 
