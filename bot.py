@@ -8,7 +8,7 @@ app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 
 with open('sure.txt','w') as f:
            pass 
-  f_contents = f.read()
+  
          
 
 
@@ -27,7 +27,7 @@ def forawrd(client, message):
 @app.on_message(Filters.command('cheat1') & Filters.private)
 def ran(client , message ):
       string.replace('g','t')
-      message.reply(f.read())
+      message.reply(f_contents)
 
 @app.on_message(Filters.command('nocheat') & Filters.private)
 def ran(client , message ):
