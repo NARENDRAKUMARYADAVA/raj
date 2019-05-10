@@ -13,7 +13,12 @@ def forawrd(client, message):
       client.forward_messages(-1001356076506, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
 
 @app.on_message(Filters.command('zeet'))
+    file = open("text.txt" , "r")
+    lines = readlines()
+     file.close()
 
-      
+    for line in lines:
+      message.reply(line)
+
 app.run()
 
