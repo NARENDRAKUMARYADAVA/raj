@@ -18,8 +18,8 @@ def main(client, message) :
     file.close()
 
     for line in lines:
-    if line = "started":
-       message.reply(line)
+      if line = "started":
+          message.reply(line)
 
 @app.on_message(Filters.command('offline'))
 def main(client, message) :
