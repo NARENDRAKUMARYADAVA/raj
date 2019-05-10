@@ -19,24 +19,29 @@ def forawrd(client, message):
 
 @app.on_message(Filters.command('status'))
 def main(client, message) :
-    file = open("text.txt" , "r")
-    lines = file.readlines()
-    file.close()
+  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+      file = open("text.txt" , "r")
+      lines = file.readlines()
+      file.close()
 
-    for line in lines:
-      if line == "started":
-          message.reply("Forwarding is on ! ")
-      if line == "closed":
-          message.reply("Forwarding is stopped ! ")
+      for line in lines:
+        if line == "started":
+           message.reply("Forwarding is on ! ")
+        if line == "closed":
+           message.reply("Forwarding is stopped ! ")
  
 @app.on_message(Filters.command('offline'))
 def main(client, message) :
+  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
+
     file = open("text.txt" , "w")
     file.write("closed")
     file.close()
     message.reply("Forwarding is off ! ")
 @app.on_message(Filters.command('online'))
 def main(client, message) :
+  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
+
     file = open("text.txt" , "w")
     file.write("started")
     file.close()
