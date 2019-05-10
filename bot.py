@@ -25,21 +25,22 @@ def main(client, message) :
 
     for line in lines:
       if line == "started":
-          message.reply(Forwarding is on ! 😎😎😁)
+          message.reply("Forwarding is on ! ")
       if line == "closed":
-          message.reply(Forwarding is stopped ! ☺️☺️😊)
+          message.reply("Forwarding is stopped ! ")
  
 @app.on_message(Filters.command('offline'))
 def main(client, message) :
     file = open("text.txt" , "w")
     file.write("closed")
     file.close()
+    message.reply("Forwarding is on ! ")
 @app.on_message(Filters.command('online'))
 def main(client, message) :
     file = open("text.txt" , "w")
     file.write("started")
     file.close()
-
+    message.reply("Forwarding is on !")
 
 app.run()
 
