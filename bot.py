@@ -12,7 +12,7 @@ def forawrd(client, message):
     lines = file.readlines()
     file.close()
     
-    files = open("text.txt" , "r")
+    files = open("sure.txt" , "r")
     liner = files.readlines()
     files.close()
 
