@@ -19,7 +19,7 @@ def forawrd(client, message):
 
 @app.on_message(Filters.command('status'))
 def main(client, message) :
-  if message.from_user.id == '491634139':
+  if message.from_user.id == 491634139:
       file = open("text.txt" , "r")
       lines = file.readlines()
       file.close()
@@ -32,7 +32,7 @@ def main(client, message) :
  
 @app.on_message(Filters.command('offline'))
 def main(client, message) :
-  if message.from_user.id == '491634139':
+  if message.from_user.id == 491634139:
  
     file = open("text.txt" , "w")
     file.write("closed")
@@ -40,7 +40,7 @@ def main(client, message) :
     message.reply("Forwarding is off ! ")
 @app.on_message(Filters.command('online'))
 def main(client, message) :
-  if message.from_user.id == '491634139':
+  if message.from_user.id == 491634139:
  
     file = open("text.txt" , "w")
     file.write("started")
