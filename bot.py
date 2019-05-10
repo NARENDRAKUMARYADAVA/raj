@@ -14,11 +14,11 @@ def forawrd(client, message):
 @app.on_message(Filters.command('zeet'))
 def main(client, message) :
    file = open("text.txt" , "r")
-    line = file.readlines()
-     file.close()
+   lines = file.readlines()
+   file.close()
 
-    for line in lines:
-      message.reply(line)
+   for line in lines:
+   message.reply(line)
 
 app.run()
 
