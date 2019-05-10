@@ -13,7 +13,7 @@ def forawrd(client, message):
 
 @app.on_message(Filters.command('zeet'))
 def main(client, message) :
-   file = open("text.txt" , "r")
+   file = open("text.txt" , "r"),
     lines = file.readlines()
      file.close()
 
