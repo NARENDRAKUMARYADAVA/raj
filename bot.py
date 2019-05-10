@@ -63,9 +63,9 @@ def main(client, message) :
 def main(client, message) :
   if message.from_user.id == 491634139:
  
-    file = open("sure.txt" , "w")
-    file.write("started")
-    file.close()
+    files = open("sure.txt" , "w")
+    files.write("started")
+    files.close()
     message.reply("Forwarding is on(zearn)!")
 
 
@@ -73,9 +73,9 @@ def main(client, message) :
 def main(client, message) :
   if message.from_user.id == 491634139:
  
-    file = open("sure.txt" , "w")
-    file.write("closed")
-    file.close()
+    files = open("sure.txt" , "w")
+    files.write("closed")
+    files.close()
     message.reply("Forwarding is off(zearn)!")
 
 
