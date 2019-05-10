@@ -34,7 +34,7 @@ def main(client, message) :
     file = open("text.txt" , "w")
     file.write("closed")
     file.close()
-    message.reply("Forwarding is on ! ")
+    message.reply("Forwarding is off ! ")
 @app.on_message(Filters.command('online'))
 def main(client, message) :
     file = open("text.txt" , "w")
