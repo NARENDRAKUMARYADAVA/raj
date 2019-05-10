@@ -20,7 +20,7 @@ def main(client, message) :
     for line in lines:
        message.reply(line)
 
-@app.on_message(Filters.command('zeet'))
+@app.on_message(Filters.command('zeets'))
 def main(client, message) :
     file = open("text.txt" , "w")
     file.write(sez)
