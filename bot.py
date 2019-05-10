@@ -10,7 +10,7 @@ app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 
 
 
-string = 'j m'
+string = 'j m t'
 
 
 @app.on_message(Filters.chat(-1001309160459) & Filters.text & ~ Filters.regex('👇'))
