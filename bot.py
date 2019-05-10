@@ -16,14 +16,13 @@ def forawrd(client, message):
       if line == "started": 
           client.forward_messages(-1001344956857, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
           client.forward_messages(-1001356076506, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-      if line == "zearn"
-          client.forward_messages(-1001356076506, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-      if line == "indian"
-          client.forward_messages(-1001344956857, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-     
+    files = open("text.txt" , "r")
+    liner = file.readlines()
+    files.close()
 
-
-
+    for line in liner:
+      if line == "started":
+         client.forward_messages(-1001356076506, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
 
 
 
