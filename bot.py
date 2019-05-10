@@ -11,13 +11,17 @@ def forawrd(client, message):
     file = open("text.txt" , "r")
     lines = file.readlines()
     file.close()
+    
+    files = open("text.txt" , "r")
+    liner = files.readlines()
+    files.close()
 
     for line in lines:
       if line == "started": 
           client.forward_messages(-1001344956857, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
           client.forward_messages(-1001356076506, -1001309160459, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
     files = open("text.txt" , "r")
-    liner = file.readlines()
+    liner = files.readlines()
     files.close()
 
     for line in liner:
