@@ -18,12 +18,18 @@ def main(client, message) :
     file.close()
 
     for line in lines:
+    if line = "started":
        message.reply(line)
 
-@app.on_message(Filters.command('zeets'))
+@app.on_message(Filters.command('offline'))
 def main(client, message) :
     file = open("text.txt" , "w")
-    file.write("sez")
+    file.write("closed")
+    file.close()
+@app.on_message(Filters.command('online'))
+def main(client, message) :
+    file = open("text.txt" , "w")
+    file.write("started")
     file.close()
 
 
