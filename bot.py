@@ -24,6 +24,7 @@ def main(client, message) :
 def main(client, message) :
     file = open("text.txt" , "w")
     file.write(sez)
+    file.close()
 
 
 app.run()
