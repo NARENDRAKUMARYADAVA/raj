@@ -62,7 +62,7 @@ def main(client, message) :
     file.close()
     message.reply("Forwarding is on !")
 
-@app.on_message(Filter.command('zearnon'))
+@app.on_message(Filters.command('zearnon'))
 def main(client, message) :
   if message.from_user.id == 491634139:
  
@@ -72,7 +72,7 @@ def main(client, message) :
     message.reply("Forwarding is on(zearn)!")
 
 
-@app.on_message(Filter.command('zearnoff'))
+@app.on_message(Filters.command('zearnoff'))
 def main(client, message) :
   if message.from_user.id == 491634139:
  
