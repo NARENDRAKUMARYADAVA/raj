@@ -59,5 +59,25 @@ def main(client, message) :
     file.close()
     message.reply("Forwarding is on !")
 
+@app.on_message(Filter.command('zearnon'))
+def main(client, message) :
+  if message.from_user.id == 491634139:
+ 
+    file = open("sure.txt" , "w")
+    file.write("started")
+    file.close()
+    message.reply("Forwarding is on(zearn)!")
+
+
+@app.on_message(Filter.command('zearnoff'))
+def main(client, message) :
+  if message.from_user.id == 491634139:
+ 
+    file = open("sure.txt" , "w")
+    file.write("closed")
+    file.close()
+    message.reply("Forwarding is off(zearn)!")
+
+
 app.run()
 
