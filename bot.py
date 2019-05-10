@@ -27,7 +27,7 @@ def ran(client , message ):
 @app.on_message(Filters.command('nocheat') & Filters.private)
 def ran(client , message ):
       
-      message.reply(string.replace('j','m'))
+      message.reply(string.replace('t','j'))
       
 
 
