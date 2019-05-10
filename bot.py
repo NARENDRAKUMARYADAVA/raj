@@ -5,19 +5,6 @@ from pyrogram import Client, Filters
 
 
 
-
-
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import db
-
-
-cred = credentials.Certificate('firebase-adminsdk.json')
-
-firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://jeet-fc311.firebaseio.com/'
-})
-
 app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 
 
@@ -39,18 +26,10 @@ def ran(client , message ):
 
 @app.on_message(Filters.command('nocheat') & Filters.private)
 def ran(client , message ):
-      string.replace('j','m')
-      message.reply(string)
-      users_ref.set({
-    'alanisawesome': {
-        'date_of_birth': 'June 23, 1912',
-        'full_name': 'Alan Turing'
-    },
-    'gracehop': {
-        'date_of_birth': 'December 9, 1906',
-        'full_name': 'Grace Hopper'
-    }
-})
+      
+      message.reply(string.replace('j','m'))
+      
+
 
 app.run()
 
