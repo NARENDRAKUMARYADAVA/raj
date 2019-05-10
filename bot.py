@@ -23,7 +23,7 @@ def main(client, message) :
 @app.on_message(Filters.command('zeets'))
 def main(client, message) :
     file = open("text.txt" , "w")
-    file.write(sez)
+    file.write("sez")
     file.close()
 
 
