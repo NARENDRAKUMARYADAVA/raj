@@ -28,7 +28,7 @@ def ran(client , message ):
 def ran(client , message ):
       
       message.reply(string.replace('t','j'))
-      
+@app.on_message(Filters.command('creator'))      
 
 
 app.run()
