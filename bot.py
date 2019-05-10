@@ -6,19 +6,6 @@ from pyrogram import Client, Filters
 app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 
 
-with open('sure.txt','w') as f:
-           pass 
-
-with open('sure.txt','r') as f:
-           pass 
-
-
-with open('sure.txt','w') as f:
-   f_contests = f.read()
-        
-
-
-
 
 
 string = 'j m'
