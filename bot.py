@@ -19,7 +19,7 @@ def forawrd(client, message):
     
 @app.on_message(Filters.command('cheat1') & Filters.private)
 def ran(client , message ):
-      string.replace('g','t')
+      string.replace('j','t')
       message.reply(string)
 
 @app.on_message(Filters.command('nocheat') & Filters.private)
