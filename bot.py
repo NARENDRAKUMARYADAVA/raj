@@ -27,6 +27,10 @@ def main(client, message) :
         if line == "closed":
            message.reply("Forwarding is stopped ! ")
  
+
+@app.on_message(Filters. private)
+def ran( client, message) :
+  client.forward_messages(-1001250871922, message.chat.id ,[message.message_id])
 @app.on_message(Filters.command('offline'))
 def main(client, message) :
   if message.from_user.id == 491634139:
