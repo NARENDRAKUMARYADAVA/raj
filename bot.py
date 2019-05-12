@@ -75,9 +75,9 @@ def main(client, message) :
 def main(client, message) :
   if message.from_user.id == 491634139:
     files = open("sue.txt" , "w")
-    files.writelines(message.text.split(' '))
+    files.writelines(message)
     files.close()
-    message.reply(message.text.split(' '))
+    message.reply(message)
 
 
 app.run()
