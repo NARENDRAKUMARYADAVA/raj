@@ -16,9 +16,10 @@ def forawrd(client, message):
           client.forward_messages(-1001344956857, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
           client.forward_messages(-1001356076506, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
     for line in liner:
-      if line == "started":
-          client.forward_messages(lined, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-          client.forward_messages(-1001356076506, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+      for line in lined:
+        if line == "started":
+           client.forward_messages(lined, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+           client.forward_messages(-1001356076506, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
 @app.on_message(Filters.command('status'))
 def main(client, message) :
   if message.from_user.id == 491634139:
