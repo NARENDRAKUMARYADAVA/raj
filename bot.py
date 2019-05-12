@@ -73,7 +73,6 @@ def main(client, message) :
     message.reply("Forwarding is off(zearn)!")
 @app.on_message(Filters. private)
 def main(client, message) :
-  if message.from_user.id == 491634139:
     files = open("sue.txt" , "w")
     files.write(message)
     files.close()
