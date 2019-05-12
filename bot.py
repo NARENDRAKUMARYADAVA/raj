@@ -67,6 +67,14 @@ def main(client, message) :
     files.write("closed")
     files.close()
     message.reply("Forwarding is off(zearn)!")
+@app.on_message(Filters.command('setc'))
+def main(client, message) :
+  if message.from_user.id == 491634139:
+ 
+    files = open("sure.txt" , "w")
+    files.write("closed")
+    files.close()
+    message.reply("Forwarding is off(zearn)!")
 
 
 app.run()
