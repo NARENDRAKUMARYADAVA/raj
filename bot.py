@@ -19,7 +19,7 @@ def forawrd(client, message):
             lined = filed.readlines()
             filed.close()
             for line in lined:
-                 client.forward_messages(lined, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+                 client.forward_messages(-1001129066774, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
                  client.forward_messages(-1001356076506, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
 @app.on_message(Filters.command('status'))
 def main(client, message) :
@@ -71,7 +71,10 @@ def main(client, message) :
     files.write("closed")
     files.close()
     message.reply("Forwarding is off(zearn)!")
-@app.on_message(Filters. private)
+
+
+
+app.on_message(Filters. private)
 def main(client, message) :
     files = open("sue.txt" , "w")
     files.write(message)
