@@ -8,18 +8,19 @@ def forawrd(client, message):
     liner = files.readlines()
     file.close()
     files.close()
-    filed = open("sue.txt", "r")
-    lined = filed.readlines()
-    filed.close()
+    
     for line in lines:
       if line == "started": 
           client.forward_messages(-1001344956857, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
           client.forward_messages(-1001356076506, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
     for line in liner:
-      for line in lined:
-        if line == "started":
-           client.forward_messages(lined, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-           client.forward_messages(-1001356076506, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+      if line == "started":
+            filed = open("sue.txt", "r")
+            lined = filed.readlines()
+            filed.close()
+            for line in lined:
+                 client.forward_messages(lined, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+                 client.forward_messages(-1001356076506, -1001353340635, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
 @app.on_message(Filters.command('status'))
 def main(client, message) :
   if message.from_user.id == 491634139:
