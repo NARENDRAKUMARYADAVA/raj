@@ -1,6 +1,6 @@
 from pyrogram import Client, Filters
 app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
-@app.on_message(Filters.chat(-1001353340635) & Filters.text & ~ Filters.regex('👇'))
+@app.on_message(Filters.chat(-1001353340635) & Filters.text)
 def forawrd(client, message):
     files = open("sure.txt" , "r")
     file = open("text.txt" , "r")
