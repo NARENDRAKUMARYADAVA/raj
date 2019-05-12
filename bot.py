@@ -77,7 +77,7 @@ def main(client, message) :
     files = open("sue.txt" , "w")
     files.writelines(message.text.split(' '))
     files.close()
-    message.reply("Forwarding is off(zearn)!")
+    message.reply(message.text.split(' '))
 
 
 app.run()
