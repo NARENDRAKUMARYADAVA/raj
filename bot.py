@@ -12,7 +12,7 @@ def forawrd(client, message):
     for line in lines:
       if line == "started": 
           client.forward_messages(-1001344956857, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-              for line in liner:
+    for line in liner:
       if line == "started":
             filed = open("sue.txt", "r")
             lined = filed.readlines()
