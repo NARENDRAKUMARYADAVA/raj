@@ -19,7 +19,8 @@ def forawrd(client, message):
             filed.close()
             for line in lined:
                  client.forward_messages(-1001290422511, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-                 @app.on_message(Filters.command('status'))
+                 
+@app.on_message(Filters.command('status'))
 def main(client, message) :
   if message.from_user.id == 491634139:
       file = open("text.txt" , "r")
