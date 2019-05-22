@@ -14,11 +14,8 @@ def forawrd(client, message):
           client.forward_messages(-1001344956857, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
     for line in liner:
       if line == "started":
-            filed = open("sue.txt", "r")
-            lined = filed.readlines()
-            filed.close()
-            for line in lined:
-                 client.forward_messages(-1001137104015, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+ 
+          client.forward_messages(-1001137104015, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
                  
 @app.on_message(Filters.command('status'))
 def main(client, message) :
