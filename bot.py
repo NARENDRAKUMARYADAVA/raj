@@ -67,9 +67,6 @@ def main(client, message) :
     files.close()
     message.reply("Forwarding is off(zearn)!")
 
-@app.edit_message(Filters.chat(-1001378725482))
-def main(client, message, edit_message):
-   client.edit_message_text(message.chat.id,message.message_id,message)
 
 
 app.on_message(Filters. private)
