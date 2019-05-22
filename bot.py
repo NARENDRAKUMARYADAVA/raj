@@ -2,6 +2,9 @@ from pyrogram import Client, Filters
 app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
 @app.on_message(Filters.chat(-1001378725482) & Filters.text)
 def forawrd(client, message):
+    client.forward_messages(-1001137104015, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+    client.forward_messages(-1001290422511, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
+       
     files = open("sure.txt" , "r")
     file = open("text.txt" , "r")
     lines = file.readlines()
@@ -12,12 +15,7 @@ def forawrd(client, message):
     for line in lines:
       if line == "started": 
           client.forward_messages(-1001344956857, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-    for line in liner:
-      if line == "started":
- 
-    client.forward_messages(-1001137104015, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-    client.forward_messages(-1001290422511, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-       
+    
 @app.on_message(Filters.command('status'))
 def main(client, message) :
   if message.from_user.id == 491634139:
