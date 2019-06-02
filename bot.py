@@ -1,81 +1,79 @@
 from pyrogram import Client, Filters
-app = Client('765108996:AAGYA2lsT6yw1q5SEx1PXesPWYdwb8RBivc')
-@app.on_message(Filters.chat(-1001378725482) & Filters.text)
+app = Client('823081248:AAGrkYeMa0xuBm5RhMn94cH2kcEv_GTu4c4')
+
+u = '-1001328910368'
+@app.on_message(Filters.chat(-1001369162545) & Filters.text)
 def forawrd(client, message):
-    client.forward_messages(-1001137104015, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-    client.forward_messages(-1001290422511, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-       
-    files = open("sure.txt" , "r")
     file = open("text.txt" , "r")
     lines = file.readlines()
-    liner = files.readlines()
     file.close()
-    files.close()
-    
     for line in lines:
-      if line == "started": 
-          client.forward_messages(-1001344956857, -1001378725482, [message.message_id], 'bool = None ', 'bool = True' , 'bool = True' )
-    
+        if '🖲' in message.text :
+            client.send_message(int(u),message.text.replace('🖲' , '💦'))
+        else:
+          if '📟' in message.text :
+            client.send_message(int(u),message.text.replace('📟' , '💋'))
+          else:
+            if message.text == '6' :
+               client.send_sticker(int(u),'CAADBQADagIAAlrCoBLZsv2I8bOyAAEC')
+               client.send_message(int(u),message.text.replace('🎾' , '👙'))
+            else:
+              if message.text == '4' :
+               client.send_sticker(int(u),'CAADBQADaQIAAlrCoBIcPTv3oa81RgI')
+               client.send_message(int(u),message.text.replace('🎾' , '👙'))
+              else:
+                if message.text == 'WD' :
+                  client.send_message(int(u),message.text.replace('WD' , 'WIDE BALL 🙅‍♂️'))
+                else:
+                  client.send_message(int(u),message.text.replace('🎾' , '👙'))
+
+
+
 @app.on_message(Filters.command('status'))
 def main(client, message) :
-  if message.from_user.id == 491634139:
+    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
       file = open("text.txt" , "r")
       lines = file.readlines()
       file.close()
       for line in lines:
         if line == "started":
-           message.reply("Forwarding is on ! ")
+           message.reply("line is on ! ")
         if line == "closed":
-           message.reply("Forwarding is stopped ! ")
- 
-
+           message.reply("line is stopped ! ")
+    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+      file = open("text.txt" , "r")
+      lines = file.readlines()
+      file.close()
+      for line in lines:
+        if line == "started":
+           message.reply("line is on ! ")
+        if line == "closed":
+           message.reply("line is stopped ! ")        
 @app.on_message(Filters. private)
 def ran( client, message) :
   client.forward_messages(-1001250871922, message.chat.id ,[message.message_id])
 @app.on_message(Filters.command('offline'))
 def main(client, message) :
- 
+   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
     file = open("text.txt" , "w")
     file.write("closed")
     file.close()
-    message.reply("Forwarding is off ! ")
+    message.reply("line is off ! ")
+   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+    file = open("text.txt" , "w")
+    file.write("closed")
+    file.close()
+    message.reply("line is off ! ")
 @app.on_message(Filters.command('online'))
 def main(client, message) :
-  if message.from_user.id == 491634139:
- 
+   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
     file = open("text.txt" , "w")
     file.write("started")
     file.close()
-    message.reply("Forwarding is on !")
-
-@app.on_message(Filters.command('zearnon'))
-def main(client, message) :
-  if message.from_user.id == 491634139:
- 
-    files = open("sure.txt" , "w")
-    files.write("started")
-    files.close()
-    message.reply("Forwarding is on(zearn)!")
-
-
-@app.on_message(Filters.command('zearnoff'))
-def main(client, message) :
-  if message.from_user.id == 491634139:
- 
-    files = open("sure.txt" , "w")
-    files.write("closed")
-    files.close()
-    message.reply("Forwarding is off(zearn)!")
-
-
-
-app.on_message(Filters. private)
-def main(client, message) :
-    files = open("sue.txt" , "w")
-    files.write(message)
-    files.close()
-    message.reply(message)
-
-
+    message.reply("line is on !")
+   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+    file = open("text.txt" , "w")
+    file.write("started")
+    file.close()
+    message.reply("line is on !")
 app.run()
-
