@@ -1,7 +1,7 @@
 from pyrogram import Client, Filters
 app = Client('823081248:AAGrkYeMa0xuBm5RhMn94cH2kcEv_GTu4c4')
 
-u = '-1001328910368'
+u = '-1001115051772'
 @app.on_message(Filters.chat(-1001369162545) & Filters.text)
 def forawrd(client, message):
     file = open("text.txt" , "r")
