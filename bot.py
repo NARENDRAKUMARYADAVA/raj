@@ -1,5 +1,5 @@
 from pyrogram import Client, Filters
-app = Client('823081248:AAGrkYeMa0xuBm5RhMn94cH2kcEv_GTu4c4')
+app = Client('485505720:AAGQHhdDGWlEnzPUNcJlX8wBSdVneBjnUXc')
 
 u = '-1001115051772'
 @app.on_message(Filters.chat(-1001369162545) & Filters.text)
