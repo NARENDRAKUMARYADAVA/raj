@@ -18,37 +18,36 @@ def forawrd(client, message):
             client.send_message(int(u),message.text.replace('🔴' , '🏝'))
           else:
             if message.text == '6' :
-               client.send_sticker(int(u),'CAADBQADHAAD271NHXPgZgboyWwDAg')
                client.send_message(int(u),'**Six**')
             else:
               if message.text == '4' :
-               client.send_sticker(int(u),'CAADBQADGwAD271NHWpGz0fJOgEPAg')
+               
                client.send_message(int(u),'**Four**')
               else:
                 if message.text == '🚹 WIDE BALL 🚹' :
-                  client.send_sticker(int(u),'CAADBQADHgAD271NHUFx5PgLyzp9Ag')
+                  
                   client.send_message(int(u),message.text.replace('🚹 WIDE BALL 🚹' , '🤦‍♂️ **WIDE BALL** 🤦‍♂️'))
                 else:
                     if message.text == '🚾 WKT GYA WKT 🚾' :
-                     client.send_sticker(int(u),'CAADBQADHQAD271NHQimFHP2bU9cAg')
+                     
                      client.send_message(int(u),message.text.replace('🚾 WKT GYA WKT 🚾' , '🚾** Wicket Wicket Wicket** 🚾 ')) 
                     else:
                        if 'NO BALL' in message.text:
                          client.send_message(int(u),message.text.replace('NO BALL' , '🔛** NO BALL **🔛') )
                        else:
                           if 'DRINKS BREAK' in message.text:
-                            client.send_sticker(int(u),'CAADBQADJQAD271NHRSHuFn7xmbvAg')
+                           
                             client.send_message(int(u), '🍻** DRINKS BREAK **🍻') 
                           else:
                             if 'DEAD BALL' in message.text:
-                               client.send_sticker(int(u),'CAADBQADIQAD271NHd6xC7TBgAsmAg')
+                               
                                client.send_message(int(u), '🔁** DEAD BALL **🔄') 
                             else:
                               if message.text == 'RUKA BOWLER✔️':
                                  client.send_message(int(u), '🛑** BOWLER RUKA **🛑')
                               else:
                                 if message.text == '🚾WICKET WICKET WICKET 🚾':
-                                   client.send_sticker(int(u),'CAADBQADHQAD271NHQimFHP2bU9cAg')
+                                   
                                    client.send_message(int(u),message.text.replace('🚾WICKET WICKET WICKET 🚾' , '🚾** Wicket Wicket Wicket **🚾 '))
                                 else:
                                    client.send_message(int(u),message.text.replace('🎾' , '🥎'))
@@ -62,7 +61,7 @@ def forawrd(client, message):
     for line in lines:
       if not line == 'closed':
         if message.sticker.file_id == 'CAADBQADFAQAAlrCoBKRHyVMca5GGQI' :
-            client.send_sticker(int(u),'CAADBQADHwAD271NHQtXw-moeKYWAg')
+            
             client.send_message(int(u),'🍾 **INNINIGS BREAK** 🍾' )
 
 @app.on_message(Filters.command('status'))
