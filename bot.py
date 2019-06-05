@@ -8,8 +8,8 @@ def forawrd(client, message):
     lines = file.readlines()
     file.close()
     for line in lines:
-        if '🖲' in message.text :
-            client.send_message(int(u),message.text.replace('🖲' , '💘'))
+        if '🧣' in message.text :
+            client.send_message(int(u),message.text.replace('🧣' , '💘'))
         else:
           if '📟' in message.text :
             client.send_message(int(u),message.text.replace('📟' , '🏝'))
