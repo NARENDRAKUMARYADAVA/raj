@@ -1,0 +1,30 @@
+{
+    "dc_id": 1,
+    "test_mode": false,
+    "auth_key": [
+        "qQls5GRvxDPJXKCy7/KIN7I29jNcHTJS/HI0Mza4SbV",
+        "RT7NMzqomZ/mW4bhx7TWZ8pF5Ar858ZvyLrc2F0kOeB",
+        "7TUz+QahA+G03uwPhRW9ZfUDmMOQLqP4LXA4VL8E/F0",
+        "75gm/BhQQqGinU3RG+xrWybL/VBg6/jRBracH0EOs9N",
+        "tKwUwEXL21ExDVEtATQDZWDKIEqIFuAY7Qy1ocKUygC",
+        "6fZfwwSa/1nav0AtmMQhIho9jLkf1W+IfGyXFiCXcID",
+        "yi3CrJvFqPIdeGIUVl4H/cCqDqBJqt5TjNRzMBBpHC5",
+        "FW76N/r1Itaixozu6/DMjS88KauDQIpoOiw849B0A=="
+    ],
+    "user_id": 655520175,
+    "date": 1559885821,
+    "is_bot": false,
+    "peers_by_id": {
+        "655520175": 700467832486468430,
+        "777000": 7557371322642058419,
+        "-1001378725482": -6048619350925184988,
+        "-1001115051772": 8001369925016947323
+    },
+    "peers_by_username": {
+        "jetline1": -1001378725482
+    },
+    "peers_by_phone": {
+        "19842257213": 655520175,
+        "42777": 777000
+    }
+}
