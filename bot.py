@@ -7,12 +7,9 @@ def forawrd(client, message):
    client.send_message(int(u),message.text.replace('🎾' , '🥎'))
            
 
-@app.on_message(Filters.chat(int(s)) & Filters.edited & Filters.text)
-def edit(client, message):
-    mess = client.iter_history(int(u), limit=100)
-    for i in mess:
-        if ' '.join(i.text.split(' ')[0:9]) in message.text:
-            i.edit(message.text)
+@app.on_message(Filters.chat(int(s)) & Filters.sticker)
+def forawrd(client, message):
+   client.send_sticker(int(u),message.sticker.file_id)
         
 
 app.run()
